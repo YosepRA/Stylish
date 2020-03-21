@@ -1,0 +1,62 @@
+/*
+Theme Name: Stylish
+Author: YosepRA
+Author URI: https://yosepra.github.io
+Description: Theme suited for fashion and lifestyle websites. It encompasses a clean design and magazine-like typography.
+Version: 1.0
+*/
+
+$primary-color: #050301;
+$secondary-color: #ef7635;
+$paper-color: #fff9e5;
+
+@mixin align-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition300() {
+  transition: all 300ms ease-out;
+}
+
+@mixin serif() {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+}
+
+@mixin sans-serif() {
+  font-family: 'Source Sans Pro', 'Segoe UI', Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+
+// Media Queries
+
+// Small devices (landscape phones, 576px and up)
+@mixin mediaSm() {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin mediaMd() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin mediaLg() {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@mixin mediaXl() {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

@@ -1,0 +1,110 @@
+.blogpost {
+  .post {
+    margin-bottom: 2rem;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    &__header {
+      @include align-center();
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      div:not(:last-child) {
+        margin-bottom: -0.3rem;
+      }
+    }
+
+    &__title {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__tags,
+    &__date {
+      font-size: 0.9rem;
+    }
+
+    &__featured-image {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0.8rem;
+    }
+
+    &__body {
+      text-align: justify;
+    }
+  }
+
+  .social-share {
+    margin-bottom: 2rem;
+
+    @include align-center();
+    flex-direction: column;
+
+    &__title {
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      color: $primary-color;
+      font-size: 1.6rem;
+      @include transition300();
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .more-articles {
+    white-space: nowrap;
+
+    .card {
+      position: relative;
+      display: inline-block;
+      width: 280px;
+      height: 360px;
+      margin: 0 1rem;
+      border: none;
+      white-space: normal;
+      overflow: hidden;
+
+      &-body {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+          0deg,
+          rgba($primary-color, 1) 0%,
+          rgba($primary-color, 0) 100%
+        );
+        color: white;
+        @include transition300();
+
+        h5 {
+          font-size: 1.3rem;
+          text-align: center;
+          color: white;
+        }
+      }
+
+      &:hover {
+        .card-body {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
