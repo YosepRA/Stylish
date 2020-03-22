@@ -31,7 +31,7 @@
                     <section class="blogpost__meta-data">
                       <div class="date">
                         <i class="fas fa-calendar-alt"></i>
-                        <?php the_time('d/m/Y') ?>
+                        <?php the_time('m/d/Y') ?>
                       </div>
                       <div class="tags">
                         <i class="fas fa-tag"></i>
@@ -70,9 +70,9 @@
       </section>
     </section>
 
-    <!-- <section class="instagram-rollfeed overflow-hidden">
+    <section class="instagram-rollfeed overflow-hidden">
       <iframe src="https://snapwidget.com/embed/802968" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:1680px; height:240px;"></iframe>
-    </section> -->
+    </section>
 
     <!-- To push the main container for sticky footer's space -->
     <div class="push"></div>

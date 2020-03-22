@@ -32,6 +32,57 @@ docReady(() => {
     })
   );
 
+  if (document.body.className.includes('blogpost')) {
+    // Slick carousel.
+    $('.more-articles').slick({
+      centerMode: true,
+      centerPadding: '200px',
+      slidesToShow: 3,
+      prevArrow:
+        '<button type="button" class="slick-arrow slick-prev"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow:
+        '<button type="button" class="slick-arrow slick-next"><i class="fas fa-chevron-right"></i></button>',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '120px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  }
+
   function scrollUpToggler() {
     if (scrollY + innerHeight > bottomLimit) {
       scrollBtn.classList.add('show');

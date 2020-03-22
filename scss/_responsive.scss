@@ -103,6 +103,10 @@
         padding: 0 3rem;
       }
     }
+
+    .comment-form-author {
+      margin-right: 0.5rem;
+    }
   }
 
   .contact-page {
@@ -149,12 +153,8 @@
       }
     }
 
-    .more-articles {
-      .card {
-        &-body {
-          transform: translateY(38%);
-        }
-      }
+    .comment-section {
+      width: 80%;
     }
   }
 }
@@ -197,6 +197,10 @@
       &__body {
         padding: 0 10rem;
       }
+    }
+
+    .comment-section {
+      width: 60%;
     }
   }
 }
