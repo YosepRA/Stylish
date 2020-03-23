@@ -18,7 +18,7 @@ body {
 }
 
 body {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 h1,
@@ -906,6 +906,46 @@ a:hover {
 
 .contact-page .contact .wpcf7-form .contact-submit {
   width: 160px;
+}
+
+.not-found .main-container {
+  text-align: center;
+}
+
+.not-found .main-container h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -2rem;
+}
+
+.not-found .main-container .four {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-size: 7rem;
+}
+
+.not-found .main-container img {
+  margin-bottom: 0.5rem;
+}
+
+.not-found .main-container p,
+.not-found .main-container ul {
+  font-size: 1.3rem;
+}
+
+.not-found .main-container p:first-of-type {
+  margin: 0;
+}
+
+.not-found .main-container ul {
+  padding: 0;
+  list-style: none;
 }
 
 @media (min-width: 768px) {

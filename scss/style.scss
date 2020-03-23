@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 h1,
@@ -335,5 +335,8 @@ a {
 
 // CONTACT PAGE
 @import 'contact';
+
+// 404 PAGE
+@import '404';
 
 @import 'responsive';

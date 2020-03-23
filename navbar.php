@@ -17,11 +17,11 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="main-navigation">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="<?php echo site_url(); ?>">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item <?php if (is_front_page()) echo 'active'; ?>">
+            <a class="nav-link" href="<?php echo site_url(); ?>">Home <?php if (is_front_page()) echo "<span class=\"sr-only\">(current)</span>"; ?></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('/blog'); ?>">Blog</a>
+          <li class="nav-item <?php if (get_post_type() == 'post') echo 'active'; ?>">
+            <a class="nav-link" href="<?php echo site_url('/blog'); ?>">Blog <?php if (get_post_type() == 'post') echo "<span class=\"sr-only\">(current)</span>"; ?></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,8 +45,8 @@
               ?>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('/contact'); ?>">Contact</a>
+          <li class="nav-item <?php if (is_page('contact')) echo 'active'; ?>">
+            <a class="nav-link" href="<?php echo site_url('/contact'); ?>">Contact <?php if (is_page('contact')) echo "<span class=\"sr-only\">(current)</span>"; ?></a>
           </li>
           <li class="nav-item social-media d-flex justify-content-center">
             <a href="#" class="nav-link">

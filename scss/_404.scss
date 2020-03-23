@@ -1,0 +1,33 @@
+.not-found {
+  .main-container {
+    text-align: center;
+
+    h1 {
+      @include align-center();
+      margin-top: -2rem;
+    }
+
+    .four {
+      @include serif();
+      font-size: 7rem;
+    }
+
+    img {
+      margin-bottom: 0.5rem;
+    }
+
+    p,
+    ul {
+      font-size: 1.3rem;
+    }
+
+    p:first-of-type {
+      margin: 0;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+  }
+}
