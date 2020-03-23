@@ -752,6 +752,12 @@ a:hover {
   padding: 0.3rem 0.5rem;
 }
 
+.blogpost .comment-section .comment-form input:not(.submit),
+.blogpost .comment-section .comment-form textarea:not(.submit) {
+  background-color: rgba(238, 238, 238, 0.5);
+  border: 1px solid #ddd;
+}
+
 .blogpost .comment-section .comment-form .form-submit > * {
   width: 160px;
 }
@@ -821,6 +827,10 @@ a:hover {
   list-style: none;
 }
 
+.contact-page .contact .container {
+  margin-bottom: 3rem;
+}
+
 .contact-page .contact .row {
   margin-bottom: 2rem;
   padding: 2rem 1rem;
@@ -854,6 +864,48 @@ a:hover {
   top: 2px;
   margin-right: 0.6rem;
   font-size: 1.8rem;
+}
+
+.contact-page .contact__social-media i.fa-instagram {
+  margin-right: 0.85rem;
+}
+
+.contact-page .contact .wpcf7-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-page .contact .wpcf7-form input,
+.contact-page .contact .wpcf7-form textarea {
+  width: 100%;
+  padding: 0.3rem 0.5rem;
+}
+
+.contact-page .contact .wpcf7-form input:not(.contact-submit),
+.contact-page .contact .wpcf7-form textarea:not(.contact-submit) {
+  background-color: rgba(238, 238, 238, 0.5);
+  border: 1px solid #ddd;
+}
+
+.contact-page .contact .wpcf7-form p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 240px;
+          flex: 1 0 240px;
+}
+
+.contact-page .contact .wpcf7-form p:nth-of-type(3),
+.contact-page .contact .wpcf7-form p:nth-of-type(4) {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+.contact-page .contact .wpcf7-form .contact-submit {
+  width: 160px;
 }
 
 @media (min-width: 768px) {
@@ -953,6 +1005,9 @@ a:hover {
   }
   .blogpost .comment-section {
     width: 80%;
+  }
+  .contact-page .wpcf7-form p:nth-of-type(1) {
+    margin-right: 0.5rem;
   }
 }
 

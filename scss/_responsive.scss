@@ -157,6 +157,16 @@
       width: 80%;
     }
   }
+
+  .contact-page {
+    .wpcf7 {
+      &-form {
+        p:nth-of-type(1) {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
 }
 
 @include mediaXl {

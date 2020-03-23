@@ -74,9 +74,9 @@
       <a href="<?php echo site_url('/blog') ?>" class="btn btn-outline-light">Read my stories</a>
     </section>
 
-    <!-- <section class="instagram-rollfeed overflow-hidden">
+    <section class="instagram-rollfeed overflow-hidden">
       <iframe src="https://snapwidget.com/embed/802968" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:1680px; height:240px;"></iframe>
-    </section> -->
+    </section>
 
     <!-- To push the main container for sticky footer's space -->
     <div class="push"></div>

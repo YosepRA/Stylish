@@ -195,6 +195,11 @@
         input,
         textarea {
           padding: 0.3rem 0.5rem;
+
+          &:not(.submit) {
+            background-color: rgba(#eee, 0.5);
+            border: 1px solid #ddd;
+          }
         }
 
         .form-submit {
