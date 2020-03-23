@@ -8,7 +8,7 @@
     <div class="container">
       <h2>Oh dear...</h2>
       <h1>The <span class="four">404</span> is here</h1>
-      <img src="https://source.unsplash.com/480x360/?fashion" alt="Random image">
+      <img src="https://source.unsplash.com/480x360/?cat" alt="Random image">
       <p>That means you are lost</p>
       <p>Let me guide you back to these pages</p>
       <ul>
@@ -20,6 +20,8 @@
         </li>
       </ul>
     </div>
+
+    <?php include 'snap-widget.php'; ?>
 
     <div class="push"></div>
   </main>

@@ -2,6 +2,10 @@
   .main-container {
     text-align: center;
 
+    .container {
+      margin-bottom: 3rem;
+    }
+
     h1 {
       @include align-center();
       margin-top: -2rem;

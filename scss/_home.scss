@@ -6,6 +6,7 @@
     height: 100vh;
     background: url('./img/woman-wearing-sunglasses.jpg') no-repeat center
       top/cover fixed;
+    border-radius: 0;
     color: white;
 
     &__title {
@@ -18,6 +19,12 @@
       margin-top: -1.5rem;
       @include serif();
       font-size: 1.7rem;
+    }
+  }
+
+  .about {
+    &__content {
+      padding: 1.3rem;
     }
   }
 
@@ -52,8 +59,8 @@
     }
 
     p {
-      @include serif();
-      font-size: 1.3rem;
+      font-family: 'One Love', serif;
+      font-size: 2.5rem;
     }
 
     a {

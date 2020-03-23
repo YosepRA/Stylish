@@ -1,3 +1,15 @@
+@include mediaSm {
+  .bloglist {
+    .feed {
+      .blogpost {
+        &__meta-data {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
 @include mediaMd {
   .page-header {
     .navbar-info {
@@ -138,12 +150,6 @@
         font-size: 9rem;
       }
     }
-
-    .action-call {
-      p {
-        font-size: 1.5rem;
-      }
-    }
   }
 
   .blogpost {
@@ -180,12 +186,6 @@
 
       &__text {
         margin: -1rem 0 2rem;
-      }
-    }
-
-    .action-call {
-      p {
-        font-size: 1.5rem;
       }
     }
   }

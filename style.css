@@ -371,6 +371,7 @@ a:hover {
 .home .banner {
   height: 100vh;
   background: url("./img/woman-wearing-sunglasses.jpg") no-repeat center top/cover fixed;
+  border-radius: 0;
   color: white;
 }
 
@@ -384,6 +385,10 @@ a:hover {
   margin-top: -1.5rem;
   font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
   font-size: 1.7rem;
+}
+
+.home .about__content {
+  padding: 1.3rem;
 }
 
 .home .action-call {
@@ -428,8 +433,8 @@ a:hover {
 }
 
 .home .action-call p {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.3rem;
+  font-family: 'One Love', serif;
+  font-size: 2.5rem;
 }
 
 .home .action-call a {
@@ -465,6 +470,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0.6rem;
+  font-size: 0.9rem;
 }
 
 .bloglist .feed .blogpost__meta-data .date {
@@ -912,6 +918,10 @@ a:hover {
   text-align: center;
 }
 
+.not-found .main-container .container {
+  margin-bottom: 3rem;
+}
+
 .not-found .main-container h1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -946,6 +956,12 @@ a:hover {
 .not-found .main-container ul {
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: 576px) {
+  .bloglist .feed .blogpost__meta-data {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1037,9 +1053,6 @@ a:hover {
   .home .banner__title {
     font-size: 9rem;
   }
-  .home .action-call p {
-    font-size: 1.5rem;
-  }
   .blogpost .post__body {
     padding: 0 6rem;
   }
@@ -1060,9 +1073,6 @@ a:hover {
   }
   .home .banner__text {
     margin: -1rem 0 2rem;
-  }
-  .home .action-call p {
-    font-size: 1.5rem;
   }
   .bloglist .feed .blogpost__body .card-body {
     padding: 1.25rem 2.3rem;
