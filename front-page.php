@@ -1,80 +1,95 @@
 <?php get_header(); ?>
 
-<body class="home">
+<body <?php body_class('home') ?>>
 
   <?php include 'navbar.php' ?>
 
   <main class="main-container">
-    <section class="jumbotron banner mb-5">
-      <h1 class="banner__title">Signature</h1>
-      <p class="banner__text">
-        Enjoy your life more
-      </p>
-      <a class="btn btn-outline-light banner__action" href="<?php echo site_url('/blog') ?>" role="button">
-        Read my stories
-      </a>
+    <section class="jumbotron jumbotron-fluid full-height-element">
+      <div class="container">
+        <div class="jumbotron__content jumbotron__image"></div>
+        <div class="jumbotron__content jumbotron__body">
+          <p class="jumbotron__quote">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <a href="#about" class="jumbotron__action-btn">Read more</a>
+        </div>
+      </div>
     </section>
 
-    <section class="about container">
-      <div class="row about--part1 justify-content-center align-items-center">
-        <div class="col-12 col-md-6 col-lg-5 about__image p-0">
-          <img src="<?php echo get_template_directory_uri() . '/img/woman-standing-near-building.jpg' ?>" alt="Woman standing near building" class="img-fluid" />
-        </div>
-        <div class="col-12 col-md-6 col-lg-5 about__content p-md-4 p-xl-5">
-          <header class="about__header mb-3">
-            <h2>Define your style</h2>
-          </header>
+    <section id="about" class="about container full-height-element">
+      <header class="about__header">
+        <h1 class="about__title">Signature</h1>
+        <h2 class="about__subtitle">Designer &amp; Fashionista</h2>
+      </header>
 
-          <section class="about__description">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-              unde quo voluptate eveniet numquam voluptatum veritatis quod
-              suscipit veniam? Optio necessitatibus excepturi commodi nemo
-              minus laboriosam corporis aut eos totam.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-              unde quo voluptate eveniet numquam voluptatum veritatis quod
-              suscipit veniam? Optio necessitatibus excepturi commodi nemo
-              minus laboriosam corporis aut eos totam.
-            </p>
-          </section>
+      <section class="about__body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptate laudantium eos est ducimus dolores similique, officia maxime incidunt unde?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit libero minus aliquam neque esse quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam quia repellendus molestiae rerum voluptate, ex iste vero voluptatum temporibus.</p>
+      </section>
+    </section>
+
+    <section class="intro container full-height-element">
+      <div class="intro-left">
+        <div class="intro-card">
+          <div class="intro-card__image"></div>
+          <div class="intro-card__body">
+            <h2 class="intro-card__title">The Story</h2>
+            <p class="intro-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur libero voluptate sapiente possimus maiores.</p>
+          </div>
         </div>
       </div>
 
-      <div class="row about--part2 justify-content-center align-items-center">
-        <div class="col-12 col-md-6 col-lg-5 order-md-2 about__image p-0">
-          <img src="<?php echo get_template_directory_uri() . '/img/woman-sitting.jpg' ?>" alt="Woman standing near building" class="img-fluid" />
+      <div class="intro-right">
+        <div class="intro-card intro-card--1">
+          <div class="intro-card__image"></div>
+          <div class="intro-card__body">
+            <h2 class="intro-card__title">The Story</h2>
+            <p class="intro-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur libero voluptate sapiente possimus maiores.</p>
+          </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-5 order-md-1 about__content p-md-4 p-xl-5">
-          <header class="about__header mb-3">
-            <h2>Just relax</h2>
-          </header>
 
-          <section class="about__description">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-              unde quo voluptate eveniet numquam voluptatum veritatis quod
-              suscipit veniam? Optio necessitatibus excepturi commodi nemo
-              minus laboriosam corporis aut eos totam.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-              unde quo voluptate eveniet numquam voluptatum veritatis quod
-              suscipit veniam? Optio necessitatibus excepturi commodi nemo
-              minus laboriosam corporis aut eos totam.
-            </p>
-          </section>
+        <div class="intro-card intro-card--2">
+          <div class="intro-card__image"></div>
+          <div class="intro-card__body">
+            <h2 class="intro-card__title">The Story</h2>
+            <p class="intro-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur libero voluptate sapiente possimus maiores.</p>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section class="latest-article container full-height-element">
+      <header class="latest-article__title">
+        <h2>Summer Outing</h2>
+      </header>
+
+      <section class="latest-article__content">
+        <div class="latest-article__image"></div>
+
+        <div class="latest-article__body">
+          <div class="latest-article__tags">
+            <a href="#">Fashion</a>, <a href="#">Lifestyle</a>
+          </div>
+
+          <div class="latest-article__excerpt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque sequi, accusantium at tempore vel blanditiis sunt cum expedita labore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, qui.</p>
+          </div>
+
+          <div class="latest-article__read-more">
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </section>
     </section>
 
     <section class="action-call">
-      <p class="mb-2">Want to know more about me?</p>
-      <a href="<?php echo site_url('/blog') ?>" class="btn btn-outline-light">Read my stories</a>
+      <p>Find out more about me</p>
+      <a href="<?php echo site_url('/blog') ?>" class="btn btn-outline-light">My stories</a>
     </section>
 
-    <?php include 'snap-widget.php'; ?>
+    <?php // include 'snap-widget.php'; 
+    ?>
 
     <!-- To push the main container for sticky footer's space -->
     <div class="push"></div>

@@ -4,25 +4,19 @@ function docReady(cb) {
 }
 
 docReady(() => {
+  const pageHeader = document.querySelector('.page-header');
   const scrollBtn = document.querySelector('.scroll-top');
   const bottomLimit = document.body.scrollHeight - 600;
+  let lastScrollPos = 0;
 
-  // Navbar transparancy toggler.
-  if (document.body.className.includes('home')) {
-    const pageHeader = document.querySelector('.page-header');
+  window.addEventListener('scroll', () => {
+    if (scrollY > lastScrollPos) pageHeader.classList.add('hide');
+    else pageHeader.classList.remove('hide');
 
-    window.addEventListener('scroll', () => {
-      if (scrollY < innerHeight) {
-        pageHeader.classList.add('transparent');
-      } else {
-        pageHeader.classList.remove('transparent');
-      }
+    lastScrollPos = scrollY;
 
-      scrollUpToggler();
-    });
-  } else {
-    window.addEventListener('scroll', scrollUpToggler);
-  }
+    scrollUpToggler();
+  });
 
   scrollBtn.addEventListener('click', () =>
     scroll({

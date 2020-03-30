@@ -1,4 +1,4 @@
-<header class="page-header <?php if (is_front_page()) echo 'transparent' ?>">
+<header class="page-header">
   <div class="navbar-info">
     <div class="container d-flex justify-content-end align-items-center">
       <i class="far fa-envelope"></i>

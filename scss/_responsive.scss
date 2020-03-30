@@ -1,4 +1,30 @@
 @include mediaSm {
+  .home {
+    .jumbotron {
+      &__image {
+        margin-right: 1rem;
+      }
+    }
+
+    .about {
+      &__body {
+        width: 80%;
+      }
+    }
+
+    .intro {
+      &-card {
+        height: 420px;
+      }
+    }
+
+    .latest-article {
+      &__body {
+        width: 80%;
+      }
+    }
+  }
+
   .bloglist {
     .feed {
       .blogpost {
@@ -79,6 +105,69 @@
     }
   }
 
+  .home {
+    .jumbotron {
+      &__image {
+        margin-right: 2rem;
+      }
+    }
+
+    .about {
+      &__title {
+        font-size: 7rem;
+      }
+
+      &__body {
+        width: 70%;
+      }
+    }
+
+    .intro {
+      flex-direction: row;
+      justify-content: space-around;
+      height: 100vh;
+
+      &-left,
+      &-right {
+        @include align-center();
+        width: 45%;
+        height: 100%;
+      }
+
+      &-left {
+        .intro-card {
+          height: 70%;
+        }
+      }
+
+      &-right {
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      &-card {
+        height: 35%;
+        margin-bottom: 0;
+
+        &__body {
+          padding: 1rem;
+        }
+      }
+    }
+
+    .latest-article {
+      &__content {
+        width: 90%;
+      }
+    }
+
+    .action-call {
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
+
   .bloglist {
     .feed {
       margin-bottom: 2.5rem;
@@ -143,11 +232,35 @@
   }
 
   .home {
-    .banner {
-      padding: 4rem;
+    .about {
+      &__body {
+        width: 60%;
+      }
+    }
 
-      &__title {
-        font-size: 9rem;
+    .intro {
+      justify-content: center;
+
+      &-left,
+      &-right {
+        width: 35%;
+      }
+
+      &-left {
+        margin-right: 5rem;
+      }
+    }
+
+    .latest-article {
+      &__content {
+        width: 80%;
+      }
+    }
+
+    .action-call {
+      p {
+        margin: -1rem 0 -0.6rem;
+        font-size: 3.5rem;
       }
     }
   }
@@ -177,15 +290,30 @@
 
 @include mediaXl {
   .home {
-    .banner {
-      padding: 4rem 6rem;
+    .about {
+      &__body {
+        width: 50%;
+      }
+    }
 
-      &__title {
-        font-size: 10rem;
+    .intro {
+      &-left,
+      &-right {
+        width: 30%;
       }
 
-      &__text {
-        margin: -1rem 0 2rem;
+      &-left {
+        margin-right: 8rem;
+      }
+    }
+
+    .latest-article {
+      &__content {
+        width: 70%;
+      }
+
+      &__body {
+        width: 70%;
       }
     }
   }

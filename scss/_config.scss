@@ -1,15 +1,9 @@
-/*
-Theme Name: Stylish
-Author: YosepRA
-Author URI: https://yosepra.github.io
-Description: Theme suited for fashion and lifestyle websites. It encompasses a clean design and magazine-like typography.
-Version: 1.0
-*/
-
 $primary-color: #050301;
 $secondary-color: #ef7635;
 $paper-color: #fff9e5;
 $grey-line: #959595;
+
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
 
 @mixin align-center() {
   display: flex;
@@ -30,7 +24,15 @@ $grey-line: #959595;
     sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+@mixin floating-body() {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 85%;
+  padding: 1rem 1.4rem;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
 
 // Media Queries
 
