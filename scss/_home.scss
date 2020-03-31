@@ -126,62 +126,13 @@
     }
   }
 
-  .latest-article {
-    @include align-center();
-    flex-direction: column;
-
-    &__title {
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    &__content {
-      position: relative;
-      width: 100%;
-      height: 60vh;
-    }
-
-    &__image {
-      max-width: 100%;
-      height: 100%;
-      background: black url('../img/woman-with-cap.jpg') no-repeat center
-        top/cover;
-    }
-
-    &__body {
-      @include floating-body();
-      padding: 1.5rem 2rem;
-
-      p {
-        margin-bottom: 0.5rem;
-      }
-    }
-
-    &__tags {
-      margin-bottom: 0.8rem;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 3px;
-    }
-
-    &__excerpt {
-      margin-bottom: 0.8rem;
-      text-align: justify;
-    }
-
-    &__read-more {
-      text-align: right;
-    }
-  }
-
   .action-call {
     @include align-center();
     flex-direction: column;
     position: relative;
     width: 100%;
     height: 120px;
-    margin: 3rem 0;
+    margin: 5rem 0 3rem;
     background: url('../img/wardrobe.jpg') no-repeat center -100% / cover fixed;
     color: white;
     text-align: center;

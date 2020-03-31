@@ -1,12 +1,39 @@
 .bloglist {
   .feed {
-    margin-bottom: 1.5rem;
+    width: 100%;
+    margin-bottom: 12rem;
 
     .blogpost {
-      border: none;
+      position: relative;
+      width: 100%;
+      height: 460px;
 
       &__image {
-        height: 70vh;
+        width: 100%;
+        height: 100%;
+        background: black url('../img/woman-in-blue-beanie.jpg') no-repeat
+          center top/cover;
+      }
+
+      &__body {
+        @include floating-body();
+        padding: 1rem 2.5rem;
+      }
+
+      &__meta-data {
+        margin-bottom: 0.8rem;
+        text-align: center;
+      }
+
+      &__tags,
+      &__time {
+        font-size: 0.8rem;
+      }
+
+      &__tags {
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-transform: uppercase;
       }
 
       &__title {
@@ -14,28 +41,17 @@
           color: $primary-color;
         }
 
-        h2 {
-          font-size: 1.4rem;
-          margin-bottom: 0.3rem;
+        h3 {
+          margin-bottom: 0.4rem;
         }
       }
 
-      &__meta-data {
-        display: flex;
-        margin-bottom: 0.6rem;
-        font-size: 0.9rem;
-
-        .date {
-          margin-right: 1rem;
-        }
-      }
-
-      &__summary {
-        margin-bottom: 0.6rem;
+      &__text {
+        margin-bottom: 0.8rem;
         text-align: justify;
 
         p {
-          margin-bottom: 0.4rem;
+          margin: 0;
         }
       }
 
@@ -44,7 +60,15 @@
       }
 
       &:not(:last-child) {
-        margin-bottom: 2rem;
+        margin-bottom: 12rem;
+      }
+    }
+
+    .latest-article {
+      height: auto;
+
+      &__content {
+        height: 460px;
       }
     }
   }

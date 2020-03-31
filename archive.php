@@ -17,41 +17,33 @@
             the_post();
         ?>
 
-            <div class="card blogpost">
-              <div class="row no-gutters justify-content-center">
-                <div class="col-md-6 col-lg-5 blogpost__image" style="background: url('<?php if (has_post_thumbnail()) the_post_thumbnail_url(); ?>') no-repeat center top/cover;"></div>
-                <div class="col-md-6 col-lg-5 blogpost__body">
-                  <div class="card-body">
-                    <header class="blogpost__title">
-                      <a href="<?php the_permalink(); ?>">
-                        <h2><?php the_title(); ?></h2>
-                      </a>
-                    </header>
+            <article class="blogpost">
+              <div class="blogpost__image" style="background: black url('<?php if (has_post_thumbnail()) the_post_thumbnail_url(); ?>') no-repeat center top/cover"></div>
 
-                    <section class="blogpost__meta-data">
-                      <div class="date">
-                        <i class="fas fa-calendar-alt"></i>
-                        <?php the_time('m/d/Y') ?>
-                      </div>
-                      <div class="tags">
-                        <i class="fas fa-tag"></i>
-                        <?php the_category(', '); ?>
-                      </div>
-                    </section>
-
-                    <section class="blogpost__summary">
-                      <?php echo wp_trim_words(get_the_excerpt(), 70); ?>
-                    </section>
-
-                    <footer class="blogpost__read-more">
-                      <a href="<?php the_permalink(); ?>" class="btn btn-outline-dark">
-                        Read more
-                      </a>
-                    </footer>
+              <div class="blogpost__body">
+                <header class="blogpost__meta-data">
+                  <div class="blogpost__tags">
+                    <?php the_category(', '); ?>
                   </div>
+                  <div class="blogpost__title">
+                    <a href="<?php the_permalink(); ?>">
+                      <h3><?php the_title(); ?></h3>
+                    </a>
+                  </div>
+                  <div class="blogpost__time">
+                    <?php the_time('l, F jS Y') ?>
+                  </div>
+                </header>
+
+                <div class="blogpost__text">
+                  <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
+                </div>
+
+                <div class="blogpost__read-more">
+                  <a href="<?php the_permalink(); ?>">Read more</a>
                 </div>
               </div>
-            </div>
+            </article>
 
         <?php
           endwhile;

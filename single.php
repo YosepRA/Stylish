@@ -46,7 +46,7 @@
         while ($cards->have_posts()) :
           $cards->the_post();
       ?>
-          <div class="card" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat center/cover;">
+          <div class="card" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat center top/cover;">
             <div class="card-body">
               <a href="<?php the_permalink(); ?>">
                 <h5 class="card-title"><?php the_title(); ?></h5>

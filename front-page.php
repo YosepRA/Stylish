@@ -58,30 +58,46 @@
       </div>
     </section>
 
-    <section class="latest-article container full-height-element">
-      <header class="latest-article__title">
-        <h2>Summer Outing</h2>
-      </header>
+    <?php
+    $latest = new WP_Query(array('posts_per_page' => 1));
 
-      <section class="latest-article__content">
-        <div class="latest-article__image"></div>
+    if ($latest->have_posts()) :
+      while ($latest->have_posts()) :
+        $latest->the_post();
+    ?>
 
-        <div class="latest-article__body">
-          <div class="latest-article__tags">
-            <a href="#">Fashion</a>, <a href="#">Lifestyle</a>
-          </div>
+        <section class="latest-article container full-height-element">
+          <header class="latest-article__title">
+            <a href="<?php the_permalink(); ?>">
+              <h2><?php the_title(); ?></h2>
+            </a>
+          </header>
 
-          <div class="latest-article__excerpt">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque sequi, accusantium at tempore vel blanditiis sunt cum expedita labore!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, qui.</p>
-          </div>
+          <section class="latest-article__content">
+            <div class="latest-article__image" style="background: black url('<?php if (has_post_thumbnail()) the_post_thumbnail_url(); ?>') no-repeat center top/cover"></div>
 
-          <div class="latest-article__read-more">
-            <a href="#">Read more</a>
-          </div>
-        </div>
-      </section>
-    </section>
+            <div class="latest-article__body">
+              <div class="latest-article__tags">
+                <?php the_category(', '); ?>
+              </div>
+
+              <div class="latest-article__excerpt">
+                <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
+              </div>
+
+              <div class="latest-article__read-more">
+                <a href="<?php the_permalink(); ?>">Read more</a>
+              </div>
+            </div>
+          </section>
+        </section>
+
+    <?php
+      endwhile;
+    endif;
+
+    wp_reset_query();
+    ?>
 
     <section class="action-call">
       <p>Find out more about me</p>
