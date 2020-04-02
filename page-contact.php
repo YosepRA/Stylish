@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<body class="contact-page">
+<body <?php body_class('contact-page') ?>>
 
   <?php include 'navbar.php'; ?>
 
@@ -14,28 +14,26 @@
 
           <section class="contact__body">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              hic quibusdam cumque, ipsum quae eos quas possimus nostrum eaque
-              illum?
+              I will be happy to know more about you. Feel free to contact me using this contact form.
             </p>
           </section>
 
           <section class="contact__social-media">
             <div class="email">
               <i class="fas fa-envelope"></i>
-              your_name@mail.com
+              gigithmr@gmail.com
             </div>
             <div class="facebook">
               <i class="fab fa-facebook"></i>
-              facebook.com/yourname
+              Geraldine Thamara
             </div>
             <div class="twitter">
               <i class="fab fa-twitter"></i>
-              @your_name
+              @gigithmr
             </div>
             <div class="instagram">
               <i class="fab fa-instagram"></i>
-              @your_name
+              @gigithm
             </div>
           </section>
         </section>

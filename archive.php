@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<body class="bloglist">
+<body <?php body_class('bloglist'); ?>>
 
   <?php include 'navbar.php'; ?>
 

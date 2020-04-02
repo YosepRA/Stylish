@@ -32,6 +32,8 @@ docReady(() => {
       centerMode: true,
       centerPadding: '200px',
       slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 2000,
       prevArrow:
         '<button type="button" class="slick-arrow slick-prev"><i class="fas fa-chevron-left"></i></button>',
       nextArrow:

@@ -4,7 +4,7 @@
 
     img {
       max-width: 100%;
-      height: auto;
+      max-height: 600px;
     }
 
     &__header {
@@ -31,7 +31,7 @@
     &__featured-image {
       width: 100%;
       text-align: center;
-      margin-bottom: 0.8rem;
+      margin-bottom: 2rem;
     }
 
     &__body {

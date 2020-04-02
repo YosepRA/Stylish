@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<body class="bloglist">
+<body <?php body_class('bloglist'); ?>>
 
   <?php include 'navbar.php'; ?>
 
@@ -19,7 +19,7 @@
 
             <?php if (get_query_var('paged') == 0 && $wp_query->current_post == 0) : ?>
 
-              <article class="blogpost latest-article full-height-element">
+              <article class="blogpost latest-article">
                 <header class="latest-article__title">
                   <a href="<?php the_permalink(); ?>">
                     <h2><?php the_title(); ?></h2>
@@ -27,7 +27,7 @@
                 </header>
 
                 <section class="latest-article__content">
-                  <div class="latest-article__image" style="background: black url('<?php if (has_post_thumbnail()) the_post_thumbnail_url(); ?>') no-repeat center top/cover"></div>
+                  <div class="latest-article__image" style="background: black url('<?php if (has_post_thumbnail()) the_post_thumbnail_url('large'); ?>') no-repeat center top/cover"></div>
 
                   <div class="latest-article__body">
                     <div class="latest-article__tags">
@@ -48,7 +48,7 @@
             <?php else : ?>
 
               <article class="blogpost">
-                <div class="blogpost__image" style="background: black url('<?php if (has_post_thumbnail()) the_post_thumbnail_url(); ?>') no-repeat center top/cover"></div>
+                <div class="blogpost__image" style="background: black url('<?php if (has_post_thumbnail()) the_post_thumbnail_url('post-thumbnail'); ?>') no-repeat center top/cover"></div>
 
                 <div class="blogpost__body">
                   <header class="blogpost__meta-data">
@@ -94,7 +94,7 @@
       </section>
     </section>
 
-    <?php // include 'snap-widget.php'; 
+    <?php include 'snap-widget.php';
     ?>
 
     <!-- To push the main container for sticky footer's space -->

@@ -74,7 +74,7 @@
           </header>
 
           <section class="latest-article__content">
-            <div class="latest-article__image" style="background: black url('<?php if (has_post_thumbnail()) the_post_thumbnail_url(); ?>') no-repeat center top/cover"></div>
+            <div class="latest-article__image" style="background: black url('<?php if (has_post_thumbnail()) the_post_thumbnail_url('large'); ?>') no-repeat center top/cover"></div>
 
             <div class="latest-article__body">
               <div class="latest-article__tags">
@@ -104,8 +104,7 @@
       <a href="<?php echo site_url('/blog') ?>" class="btn btn-outline-light">My stories</a>
     </section>
 
-    <?php // include 'snap-widget.php'; 
-    ?>
+    <?php include 'snap-widget.php'; ?>
 
     <!-- To push the main container for sticky footer's space -->
     <div class="push"></div>

@@ -3,7 +3,7 @@
     <div class="container d-flex justify-content-end align-items-center">
       <i class="far fa-envelope"></i>
       <span class="contact-me">Contact me: </span>
-      your_name@mail.com
+      gigithmr@gmail.com
     </div>
   </div>
   <nav class="navbar fixed-top navbar-expand-md">
@@ -49,13 +49,13 @@
             <a class="nav-link" href="<?php echo site_url('/contact'); ?>">Contact <?php if (is_page('contact')) echo "<span class=\"sr-only\">(current)</span>"; ?></a>
           </li>
           <li class="nav-item social-media d-flex justify-content-center">
-            <a href="#" class="nav-link">
+            <a href="https://www.facebook.com/caroline.ferreira.3781" class="nav-link" target="_blank">
               <i class="fab fa-facebook"></i>
             </a>
-            <a href="#" class="nav-link">
+            <a href="https://twitter.com/gigithmr" class="nav-link" target="_blank">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#" class="nav-link">
+            <a href="https://www.instagram.com/gigithm/" class="nav-link" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
           </li>

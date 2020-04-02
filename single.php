@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<body class="blogpost">
+<body <?php body_class('blogpost'); ?>>
 
   <?php include 'navbar.php'; ?>
 
@@ -26,7 +26,7 @@
 
         <?php if (has_post_thumbnail()) : ?>
           <section class="post__featured-image container">
-            <img src="<?php echo the_post_thumbnail_url(); ?>" alt="Post thumbnail" />
+            <img src="<?php echo the_post_thumbnail_url('post-image'); ?>" alt="Post thumbnail" />
           </section>
         <?php endif; ?>
 
@@ -46,7 +46,7 @@
         while ($cards->have_posts()) :
           $cards->the_post();
       ?>
-          <div class="card" style="background: url('<?php the_post_thumbnail_url(); ?>') no-repeat center top/cover;">
+          <div class="card" style="background: url('<?php if (has_post_thumbnail()) the_post_thumbnail_url('medium'); ?>') no-repeat center top/cover;">
             <div class="card-body">
               <a href="<?php the_permalink(); ?>">
                 <h5 class="card-title"><?php the_title(); ?></h5>

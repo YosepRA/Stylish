@@ -57,6 +57,10 @@ a {
     line-height: 20px;
     @include transition300();
 
+    .container {
+      padding: 0;
+    }
+
     i {
       display: inline-block;
       margin-right: 6px;
@@ -291,7 +295,7 @@ a {
 }
 
 .page-title {
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.2rem;
 
   h1 {
     font-size: 2.2rem;

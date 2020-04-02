@@ -29,6 +29,10 @@
 @include mediaMd {
   .page-header {
     .navbar-info {
+      .container {
+        padding: 0 1rem;
+      }
+
       .contact-me {
         display: inline-block;
       }
@@ -173,6 +177,10 @@
         }
       }
     }
+
+    .pagination {
+      margin: -10rem 0 3rem;
+    }
   }
 
   .blogpost {
@@ -192,6 +200,10 @@
       &__info {
         border-right: 1px solid #959595;
         border-bottom: none;
+      }
+
+      &__header {
+        text-align: left;
       }
     }
   }
