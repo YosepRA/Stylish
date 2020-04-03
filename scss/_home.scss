@@ -6,16 +6,14 @@
       fixed;
 
     .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include align-center();
       height: 100%;
     }
 
     &__content {
       width: 50%;
-      max-width: 280px;
-      height: 420px;
+      max-width: 260px;
+      height: 60vh;
       background-color: white;
     }
 
@@ -39,11 +37,11 @@
     &__quote {
       margin-bottom: 2rem;
       @include serif();
-      font-size: 1.8rem;
+      font-size: 1.2rem;
     }
 
     &__action-btn {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 
@@ -52,24 +50,24 @@
     flex-direction: column;
 
     &__header {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       text-align: center;
     }
 
     &__title {
       margin-bottom: -0.3rem;
       font-family: 'One Love', 'Playfair Display', serif;
-      font-size: 6rem;
+      font-size: 5rem;
     }
 
     &__subtitle {
-      font-size: 1rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
       letter-spacing: 4px;
     }
 
     &__body {
-      width: 85%;
+      width: 95%;
       text-align: justify;
     }
   }
@@ -81,7 +79,7 @@
 
     &-left,
     &-right {
-      width: 80%;
+      width: 100%;
     }
 
     &-card {

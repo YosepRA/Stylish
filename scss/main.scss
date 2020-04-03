@@ -75,7 +75,7 @@ a {
   .navbar {
     height: 60px;
     margin-top: 20px;
-    padding: 0 2rem;
+    padding: 0 1.4rem;
     background-color: white;
     border-bottom: 1px solid $primary-color;
     @include transition300();
@@ -345,6 +345,10 @@ a {
     a {
       color: $primary-color;
     }
+
+    h2 {
+      font-size: 1.6rem;
+    }
   }
 
   &__content {
@@ -362,7 +366,7 @@ a {
 
   &__body {
     @include floating-body();
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1.6rem;
 
     p {
       margin-bottom: 0.5rem;

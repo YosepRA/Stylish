@@ -94,8 +94,7 @@
       </section>
     </section>
 
-    <?php include 'snap-widget.php';
-    ?>
+    <?php include 'snap-widget.php'; ?>
 
     <!-- To push the main container for sticky footer's space -->
     <div class="push"></div>

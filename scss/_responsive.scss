@@ -1,5 +1,11 @@
 @include mediaSm {
   .latest-article {
+    &__title {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
     &__body {
       width: 80%;
     }
@@ -7,8 +13,16 @@
 
   .home {
     .jumbotron {
+      &__content {
+        height: 65vh;
+      }
+
       &__image {
         margin-right: 1rem;
+      }
+
+      &__quote {
+        font-size: 1.6rem;
       }
     }
 
@@ -19,6 +33,11 @@
     }
 
     .intro {
+      &-left,
+      &-right {
+        width: 80%;
+      }
+
       &-card {
         height: 420px;
       }

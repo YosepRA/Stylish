@@ -18,7 +18,7 @@
 
       &__body {
         @include floating-body();
-        padding: 1rem 2.5rem;
+        padding: 1rem 1.6rem;
       }
 
       &__meta-data {
@@ -59,20 +59,10 @@
       &__read-more {
         text-align: right;
       }
-
-      // &:not(:last-child) {
-      //   margin-bottom: 12rem;
-      // }
     }
 
     .latest-article {
       height: auto;
-
-      &__title {
-        h2 {
-          font-size: 2.2rem;
-        }
-      }
 
       &__content {
         height: 460px;

@@ -1,10 +1,9 @@
 $primary-color: #050301;
-// $secondary-color: #ef7635;
 $secondary-color: #c9a978;
 $paper-color: #fff9e5;
 $grey-line: #959595;
 
-// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400;700&display=swap');
 
 @mixin align-center() {
   display: flex;
